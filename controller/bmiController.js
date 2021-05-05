@@ -28,7 +28,7 @@ function handleResponse(res, statusCode, message, data) {
 
 class BmiCalculatorController {
   
-//=============================== Get list of bmi =================================
+//=============================== Get lists of bmi =================================
    
   static index(req, res) {
     if(req.query.limit!='undefined'){
