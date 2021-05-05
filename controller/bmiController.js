@@ -41,7 +41,7 @@ class BmiCalculatorController {
     
     return BmiCalculatorBusiness.find(req.query)
     .then((data) => {
-      //console.log('data',data)
+     
       handleResponse(res, 200, 'BmiCalculator List', data)
     })
     .catch((err) => {
