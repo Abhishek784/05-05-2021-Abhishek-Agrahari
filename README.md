@@ -4,7 +4,8 @@ Download the Folder and install npm package using **npm install**
 
 ### `npm start`
 
-Runs the app in the localhost using **npm start**
+Runs the app in the localhost using **npm start**.
+
 Open http://localhost:5000 to view it in the browser.
 
 
