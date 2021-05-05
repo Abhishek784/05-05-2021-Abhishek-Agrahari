@@ -11,9 +11,14 @@ You will also see any lint errors in the console.
 
 
 
+
+
 ### `npm run test`
 
 To check if test passes use--- **npm run test**
+
+
+
 
 
 ### `Endpoints`
@@ -29,6 +34,9 @@ To check if test passes use--- **npm run test**
       "heightCm": 175,
       "weightKg": 75
   }
+
+
+
 
 **2. Get Data from the collection**
 
