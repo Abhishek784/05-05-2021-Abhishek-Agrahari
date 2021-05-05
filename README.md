@@ -1,23 +1,11 @@
 # BmiCalculator
 
+Download the Folder and install npm package using **npm install** 
 
 ### `npm start`
 
-Runs the app in the localhost.
+Runs the app in the localhost using **npm start**
 Open http://localhost:5000 to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-
-
-
-
-### `npm run test`
-
-To check if test passes use--- **npm run test**
-
-
 
 
 
@@ -63,5 +51,8 @@ GET http://localhost:5000/api/bmi
 
 
 
+### `npm run test`
+
+To check if test passes use--- **npm run test**
 
 
