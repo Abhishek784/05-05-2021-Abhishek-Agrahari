@@ -54,6 +54,7 @@ GET http://localhost:5000/api/bmi
 
 ### `npm run test`
 
-To check if test passes use--- **npm run test**
+To check if test passes use--- **npm run test**.
+This will delete all the existing document in the table and insert new document to test
 
 
