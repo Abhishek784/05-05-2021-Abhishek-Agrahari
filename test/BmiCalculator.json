@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-05T10:40:16.276Z",
+    "end": "2021-05-05T10:40:16.453Z",
+    "duration": 177,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bdfb8398-7383-4211-ab10-5367e1205472",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook: setupDatabase in \"{root}\"",
+          "fullTitle": "\"before all\" hook: setupDatabase in \"{root}\"",
+          "timedOut": false,
+          "duration": 68,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "await BmiCalculatorSchema.deleteMany()\nawait BmiCalculatorSchema.create(bmiOne)",
+          "err": {},
+          "uuid": "e6b2162e-c310-49af-b1cb-6a48823ce51c",
+          "parentUUID": "bdfb8398-7383-4211-ab10-5367e1205472",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d8b28e41-21db-46b3-bca1-e079ecbf2f8c",
+          "title": "POST /api/bmi/add",
+          "fullFile": "F:\\my projects\\BMI Calculator\\test\\bmi.test.js",
+          "file": "\\test\\bmi.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should register a new bmi",
+              "fullTitle": "POST /api/bmi/add Should register a new bmi",
+              "timedOut": false,
+              "duration": 68,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request(app)\n  .post('/api/bmi/add')\n  .send({\n    \"gender\":\"TestUser\",\n    \"heightCm\":175,\n    \"weightKg\":75,\n  })\n  .expect(200)\n  .expect(200)\n  .end(function(err, res) {\n    if (err) return done(err);\n    return done();\n  });",
+              "err": {},
+              "uuid": "c7ee1df8-d564-4a0e-8450-9d0981f908d8",
+              "parentUUID": "d8b28e41-21db-46b3-bca1-e079ecbf2f8c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c7ee1df8-d564-4a0e-8450-9d0981f908d8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 68,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "73448ec5-4b20-4da3-b80f-8c5dbe01f223",
+          "title": "GET /api/v1/bmi",
+          "fullFile": "F:\\my projects\\BMI Calculator\\test\\bmi.test.js",
+          "file": "\\test\\bmi.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should get all bmi",
+              "fullTitle": "GET /api/v1/bmi Should get all bmi",
+              "timedOut": false,
+              "duration": 22,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "request(app)\n  .get('/api/bmi')\n  .expect(200)\n  .end(function(err, res) {\n    if (err) return done(err);\n    console.log(JSON.stringify(res.body.response));\n    return done();\n  });",
+              "err": {},
+              "uuid": "ba947431-22a0-46fd-8c70-fbd1877573a8",
+              "parentUUID": "73448ec5-4b20-4da3-b80f-8c5dbe01f223",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ba947431-22a0-46fd-8c70-fbd1877573a8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.3.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "BmiCalculator",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "./test",
+        "reportFilename": "BmiCalculator"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
